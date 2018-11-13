@@ -46,7 +46,7 @@ export default {
           : 0;
     },
     title() {
-      return `Page ${index}`;
+      return `Aller sur la page n°${this.index}`;
     },
   },
   methods: {
