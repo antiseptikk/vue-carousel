@@ -18,8 +18,8 @@
         <button
           type="button"
           role="button"
-          aria-label="`Item ${index}`"
-          :title="`Item ${index}`"
+          :aria-label="title"
+          :title="title"
           class="VueCarousel-dot-button"
           :tabindex="0"
           :style="`
@@ -44,7 +44,10 @@ export default {
         : this.carousel.slideCount
           ? this.carousel.slideCount - 2
           : 0;
-    }
+    },
+    title() {
+      return `Page ${index}`;
+    },
   },
   methods: {
     /**
