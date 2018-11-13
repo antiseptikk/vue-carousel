@@ -18,8 +18,8 @@
         <button
           type="button"
           role="button"
-          :aria-label="title"
-          :title="title"
+          :aria-label="title(index + 1)"
+          :title="title(index + 1)"
           class="VueCarousel-dot-button"
           :tabindex="0"
           :style="`
@@ -44,10 +44,7 @@ export default {
         : this.carousel.slideCount
           ? this.carousel.slideCount - 2
           : 0;
-    },
-    title() {
-      return `Aller sur la page n°${this.index}`;
-    },
+    }
   },
   methods: {
     /**
@@ -70,7 +67,10 @@ export default {
      */
     isCurrentDot(index) {
       return index === this.carousel.currentPage;
-    }
+    },
+    title(index) {
+      return `Aller sur la page n°${index}`;
+    },
   }
 };
 </script>
