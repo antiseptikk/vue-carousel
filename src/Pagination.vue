@@ -18,7 +18,7 @@
         <button
           type="button"
           role="button"
-          aria-label="`Item ${index}`"
+          :aria-label="`Page ${index}`"
           :title="`Item ${index}`"
           class="VueCarousel-dot-button"
           :tabindex="0"
