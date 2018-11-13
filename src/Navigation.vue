@@ -2,7 +2,7 @@
   <div class="VueCarousel-navigation">
     <button
       type="button"
-      aria-label="Previous page"
+      aria-label="Page précédente"
       role="button"
       class="VueCarousel-navigation-button VueCarousel-navigation-prev"
       v-on:click.prevent="triggerPageAdvance('backward')"
@@ -11,7 +11,7 @@
       v-html="prevLabel"></button>
     <button
       type="button"
-      aria-label="Next page"
+      aria-label="Page suivante"
       role="button"
       class="VueCarousel-navigation-button VueCarousel-navigation-next"
       v-on:click.prevent="triggerPageAdvance()"
